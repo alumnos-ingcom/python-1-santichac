@@ -18,7 +18,7 @@ def ordenar_mayor_a_menor(uno, dos, tres):
     tres = int(tres)
     ordenados_a = sorted([uno, dos, tres])
     ordenados_a.reverse()
-    return ordenados_a
+    return tuple(ordenados_a)
 
 def ordenar_menor_a_mayor(uno, dos, tres):
     """
@@ -28,7 +28,7 @@ def ordenar_menor_a_mayor(uno, dos, tres):
     dos = int(dos)
     tres = int(tres)
     ordenados_b = sorted([uno, dos, tres])
-    return ordenados_b
+    return tuple(ordenados_b)
 
 def principal():
     """
