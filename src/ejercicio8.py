@@ -36,7 +36,6 @@ def principal():
     else:
         print('El número no es primo')
 
-
 if __name__ == "__main__":
     principal()
 
