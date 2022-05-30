@@ -30,7 +30,7 @@ def ordenar_mayor_a_menor(uno, dos, tres):
         else:
             ordenados_a.append(tres)
             ordenados_a.append(uno)
-    elif tres > uno and tres > dos:
+    else:
         ordenados_a.append(tres)
         if uno > dos:
             ordenados_a.append(uno)
@@ -61,7 +61,7 @@ def ordenar_menor_a_mayor(uno, dos, tres):
         else:
             ordenados_b.append(tres)
             ordenados_b.append(uno)
-    elif tres < uno and tres < dos:
+    else:
         ordenados_b.append(tres)
         if uno < dos:
             ordenados_b.append(uno)
