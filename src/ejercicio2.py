@@ -11,7 +11,6 @@ sumas y restas.
 def signo(numero):
     """Esta funcion indica si el numero ingresado
     es positivo, negativo o cero"""
-    numero = float(numero)
     if numero + numero > 0:
         el_signo = 'Es positivo'
     elif numero + numero < 0:
@@ -26,7 +25,7 @@ def principal():
     'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
-    numero = input('Ingrese un numero:')
+    numero = float(input('Ingrese un numero:'))
     print(signo(numero))
 
 if __name__ == "__main__":
