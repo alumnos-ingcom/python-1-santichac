@@ -11,8 +11,8 @@ def test_signo_positivo():
     """
     numero = 9.3
     resultado = signo(numero)
-    assert isinstance(resultado, float), 'El resultado debe ser de tipo float o sea, que sea un número con coma.'
-    assert resultado == 9.3, 'El resultado no es el esperado'
+    assert isinstance(resultado, str), 'El resultado debe ser de tipo float o sea, que sea un número con coma.'
+    assert resultado == 'Es positivo', 'El resultado no es el esperado'
 
 def test_signo_negativo():
     """
@@ -21,8 +21,8 @@ def test_signo_negativo():
     """
     numero = -9.3
     resultado = signo(numero)
-    assert isinstance(resultado, float), 'El resultado debe ser de tipo float o sea, que sea un número con coma.'
-    assert resultado == -9.3, 'El resultado no es el esperado.'
+    assert isinstance(resultado, str), 'El resultado debe ser de tipo float o sea, que sea un número con coma.'
+    assert resultado == 'Es negativo', 'El resultado no es el esperado.'
 
 def test_signo_cero():
     """
@@ -31,5 +31,5 @@ def test_signo_cero():
     """
     numero = 0
     resultado = signo(numero)
-    assert isinstance(resultado, int),  'El resultado debe ser de tipo float o sea, que sea un número con coma.'
-    assert resultado == 0, 'El resultado no es el esperado.'
+    assert isinstance(resultado, str),  'El resultado debe ser de tipo float o sea, que sea un número con coma.'
+    assert resultado == 'Es cero', 'El resultado no es el esperado.'
