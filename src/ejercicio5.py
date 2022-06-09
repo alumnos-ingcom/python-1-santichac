@@ -18,7 +18,7 @@ def division_lenta(dividendo, divisor):
     while dividendo >= divisor:
         cociente += 1
         dividendo = dividendo - divisor
-    return 'El cociente es:', cociente, 'y el resto es:', dividendo
+    return (f'El cociente es {cociente} y el resto es {dividendo}')
 
 def principal():
     """
