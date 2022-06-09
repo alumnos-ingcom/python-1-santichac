@@ -2,6 +2,8 @@ from src.ejercicio3 import compara
 
 def test_compara_positivo():
     """
+    Esta test evalua que la función compara() ingresando un valor y
+    revisando que el resultado sea el esperado.
     """
     numero = 9 
     otro_numero = 3
@@ -11,6 +13,8 @@ def test_compara_positivo():
 
 def test_compara_negativo():
     """
+    Esta test evalua que la función compara() ingresando un valor y
+    revisando que el resultado sea el esperado.
     """
     numero = 3
     otro_numero = 9
@@ -20,6 +24,8 @@ def test_compara_negativo():
 
 def test_compara_cero():
     """
+    Esta test evalua que la función compara() ingresando un valor y
+    revisando que el resultado sea el esperado.
     """
     numero = 16
     otro_numero = 16
