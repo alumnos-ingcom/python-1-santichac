@@ -1,4 +1,3 @@
-from __future__ import division
 from src.ejercicio5 import division_lenta
 
 """
