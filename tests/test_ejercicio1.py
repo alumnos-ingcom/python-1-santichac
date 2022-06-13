@@ -1,3 +1,8 @@
+################
+# Santiago Julián Chacón - @santichac
+# UNRN Andina - Introducción a la Ingenieria en Computación
+################
+
 from src.ejercicio1 import convertir_a_fahrenheit, convertir_a_centigrados
 
 """
