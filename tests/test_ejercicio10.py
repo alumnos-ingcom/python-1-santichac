@@ -1,3 +1,8 @@
+################
+# Santiago Julián Chacón - @santichac
+# UNRN Andina - Introducción a la Ingenieria en Computación
+################
+
 from src.ejercicio10 import es_palindromo
 
 """
