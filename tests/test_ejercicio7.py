@@ -1,3 +1,8 @@
+################
+# Santiago Julián Chacón - @santichac
+# UNRN Andina - Introducción a la Ingenieria en Computación
+################
+
 from src.ejercicio7 import sexadecimal_a_decimal, decimal_a_sexadecimal
 
 """
