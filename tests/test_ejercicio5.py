@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 ################
 # Santiago Julián Chacón - @santichac
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
+=======
+>>>>>>> efb2b8f82b1b7c6286f2e0842da0da9ff5b06228
 from src.ejercicio5 import division_lenta
 
 """

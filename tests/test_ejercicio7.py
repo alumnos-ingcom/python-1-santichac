@@ -29,4 +29,4 @@ def test_decimal_a_sexadecimal():
     numero = 49800
     resultado = decimal_a_sexadecimal(numero)
     assert isinstance(resultado, tuple), 'El resultado de la conversión debe ser de tipo tuple o sea, tiene que ser asi: (grados, minutos, segundos).'
-    assert resultado == (13, 50, 0), ' '
+    assert resultado == (13, 50, 0), 'El resultado no es el esperado.'
