@@ -1,4 +1,8 @@
-from __future__ import division
+################
+# Santiago Julián Chacón - @santichac
+# UNRN Andina - Introducción a la Ingenieria en Computación
+################
+
 from src.ejercicio5 import division_lenta
 
 """
