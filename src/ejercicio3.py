@@ -21,11 +21,11 @@ def compara(numero, otro_numero):
     """
 
     if (numero - otro_numero) > 0:
-        comparacion_num = '1'
+        comparacion_num = 1
     elif (numero - otro_numero) < 0:
-        comparacion_num = '-1'
+        comparacion_num = -1
     else:
-        comparacion_num = '0'
+        comparacion_num = 0
     return comparacion_num
 
 def principal():
@@ -37,8 +37,8 @@ def principal():
 
     numero = float(input('Ingrese el primer valor: '))
     otro_numero = float(input('Ingrese el segundo valor: '))
-    print(compara(numero, otro_numero))
+    resultado = compara(numero, otro_numero)
+    print(resultado)
 
 if __name__ == "__main__":
     principal()
-
