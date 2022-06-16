@@ -15,6 +15,9 @@ def signo(numero):
     """
     Esta función indica si el numero ingresado
     es positivo, negativo o cero.
+    Pre: numero es un número entero positivo o negativo.
+    Post: la función devuelve 1 si el número es positivo,
+    -1 si es negativo y 0 si es 0.
     """
     if numero + numero > numero:
         su_signo = 1
