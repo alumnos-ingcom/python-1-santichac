@@ -18,6 +18,11 @@ def compara(numero, otro_numero):
     e indica si el primero es mayor que el segundo,
     si el primero es menor que el segundo o si
     los dos son iguales
+    Pre: numero y otro_numero son números enteros o con coma,
+    positivos o negativos.
+    Post: la función devuelve 1 si el primer número es mayor
+    que el segundo, -1 si el segundo es mayor que el primero y
+    0 si son iguales.
     """
 
     if (numero - otro_numero) > 0:
