@@ -10,17 +10,20 @@ indicado es Primo.
 
 def es_primo(numero):
     """
-    Esta función indica si un número es primo o no
+    Esta función indica si un número es primo o no.
+    Pre: numero es un número entero positivo.
+    Post: la función devuelve True si el número es primo y
+    False si el número no es primo.
     """
     if numero < 1:
         return False
     elif numero == 2:
-        return True
+        devolucion = True
     else:
         for primo_a in range(2, numero):
             if numero % primo_a == 0:
-                return False
-        return True
+                devolucion = False
+    return devolucion
 
 def principal():
     """
@@ -31,11 +34,10 @@ def principal():
     numero = int(input('Ingrese un numero:'))
     resultado = es_primo(numero)
 
-    if resultado is True:
+    if resultado:
         print('El número es primo')
     else:
         print('El número no es primo')
 
 if __name__ == "__main__":
     principal()
-
