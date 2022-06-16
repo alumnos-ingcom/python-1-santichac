@@ -46,10 +46,9 @@ def principal():
     minutos = int(input('Ingrese los minutos: '))
     segundos = int(input('Ingrese los segundos: '))
     numero = sexadecimal_a_decimal(horas, minutos, segundos)
-    print ('La conversión a segundos es igual a:', sexadecimal_a_decimal(horas, minutos, segundos))
-    print ('La conversión a grados, minutos y segundos es:', decimal_a_sexadecimal(numero))
+    resultado = decimal_a_sexadecimal(numero)
+    print (f'La conversión a segundos es igual a: {numero}.')
+    print (f'La conversión a grados, minutos y segundos es: {resultado}.')
 
 if __name__ == "__main__":
     principal()
-
-
