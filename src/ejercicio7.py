@@ -16,6 +16,9 @@ son 60 segundos.
 def sexadecimal_a_decimal(horas, minutos, segundos):
     """
     Esta función convierte un número sexadecimal a decimal.
+    Pre: horas, minutos y segundos son números enteros positivos.
+    Post: la función multiplica esos números y los deja convertidos
+    en segundos.
     """
     horas_min = 60 * horas
     horas_sec = 60 * horas_min
@@ -26,6 +29,9 @@ def sexadecimal_a_decimal(horas, minutos, segundos):
 def decimal_a_sexadecimal(numero):
     """
     Esta función convierte un número decimal a sexadecimal.
+    Pre: numero son los segundos de la función anterior.
+    Post: la función devuelve los segundos en horas, minutos y segundos
+    en una tupla.
     """
     sexadecimal = [ ]
     minutos = numero // 60
