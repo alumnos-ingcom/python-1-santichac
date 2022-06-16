@@ -16,7 +16,7 @@ def es_primo(numero):
     False si el número no es primo.
     """
     if numero < 1:
-        return False
+        devolucion = False
     elif numero == 2:
         devolucion = True
     else:
