@@ -47,7 +47,8 @@ def principal():
     """
     numero = int(input('Ingrese un número: '))
     otro_numero = int(input('Ingrese el número que le quiera sumar: '))
-    print(suma_lenta(numero, otro_numero))
+    resultado = suma_lenta(numero, otro_numero)
+    print(resultado)
 
 if __name__ == "__main__":
     principal()
