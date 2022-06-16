@@ -12,6 +12,9 @@ con dichos valores ordenados de menor a mayor. Y Viceversa
 def ordenar_mayor_a_menor(uno, dos, tres):
     """
     Esta función recibe 3 valores y los ordena de mayor a menor
+    Pre: uno, dos y tres son números enteros, positivos o negativos.
+    Post: Esta función acomodara los tres números de tal manera
+    que queden de mayor a menor en una tupla.
     """
     ordenados_a = [ ]
     if uno > dos and uno > tres:
@@ -43,6 +46,9 @@ def ordenar_mayor_a_menor(uno, dos, tres):
 def ordenar_menor_a_mayor(uno, dos, tres):
     """
     Esta función recibe 3 valores y los ordena de menor a mayor
+    Pre: uno, dos y tres son números enteros, positivos o negativos.
+    Post: Esta función acomodara los tres números de tal manera
+    que queden de menor a mayor en una tupla.
     """
     ordenados_b = [ ]
     if uno < dos and uno < tres:
