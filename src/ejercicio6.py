@@ -79,9 +79,10 @@ def principal():
     uno = int(input('Ingrese el primer numero:'))
     dos = int(input('Ingrese el segundo numero:'))
     tres = int(input('Ingrese el tercer numero:'))
-    print('De mayor a menor es:', ordenar_mayor_a_menor(uno, dos, tres))
-    print('De menor a mayor es:', ordenar_menor_a_mayor(uno, dos, tres))
+    resultado_a = ordenar_mayor_a_menor(uno, dos, tres)
+    resultado_b = ordenar_menor_a_mayor(uno, dos, tres)
+    print(f'De mayor a menor es: {resultado_a}')
+    print(f'De menor a mayor es: {resultado_b}')
 
 if __name__ == "__main__":
     principal()
-
