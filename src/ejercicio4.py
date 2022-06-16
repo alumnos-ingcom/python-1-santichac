@@ -28,6 +28,9 @@ def suma_lenta(numero, otro_numero):
     """
     Esta función hace una suma de 1 en 1,
     por ejemplo 4 + 3 aca seria 4 + 1 + 1 + 1.
+    Pre: numero y otro_numero son números enteros,
+    positivos o negativos.
+    Post: la función devolvera la suma de los dos números.
     """
     sgn = signo(otro_numero)
     suma = numero
