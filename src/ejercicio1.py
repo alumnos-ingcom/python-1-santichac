@@ -14,13 +14,25 @@ centígrados y retorne el resultado obtenido. Y viceversa.
 """
 
 def convertir_a_fahrenheit(centigrados):
-    """Esta funcion sirve para cambiar de
-    centigrados a fahrenheit"""
+    """
+    Esta funcion sirve para cambiar de
+    centigrados a fahrenheit.
+    Pre: centigrados es un número entero, o con coma
+    y dentro de esta función se convertira en grados
+    fahrenheit.
+    Post: Se devuelve la conversión de centigrados a fahrenheit.
+    """
     return (centigrados * 9/5) + 32
 
 def convertir_a_centigrados(fahrenheit):
-    """Esta funcion sirve para cambiar de
-    centigrados a fahrenheit"""
+    """
+    Esta funcion sirve para cambiar de
+    centigrados a fahrenheit.
+    Pre: fahrenheit es un número entero, o con coma
+    y dentro de esta función se convertira en grados
+    centigrados.
+    Post: Se devuelve la conversión de fahrenheit a centigrados.
+    """
     return (fahrenheit - 32) * 5/9
 
 def principal():
@@ -35,7 +47,6 @@ def principal():
 
     grados_f = float(input('Introduzca los grados fahrenheit para convertir a centigrados:'))
     conversion_fahrenheit = convertir_a_centigrados(grados_f)
-
     print(conversion_fahrenheit)
 
 if __name__ == "__main__":
