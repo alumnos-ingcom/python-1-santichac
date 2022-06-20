@@ -14,10 +14,31 @@ entero positivo y negativo.
 """
 
 def division_lenta(dividendo, divisor):
+    """
+    Esta función divide dos números pero restandolos
+    sucesivamente hasta que el resto sea el menor posible.
+    Pre: dividendo y divisor son dos números enteros, positivos
+    o negativos.
+    Post: la función devolvera el cociente de la división y el resto
+    que en el return se llama dividendo.
+    """
     cociente = 0
-    while dividendo >= divisor:
-        cociente += 1
-        dividendo = dividendo - divisor
+    if dividendo > 0 and divisor > 0:
+        while dividendo - divisor >= 0:
+            cociente += 1
+            dividendo -= divisor
+    elif dividendo < 0 and divisor < 0:
+        while dividendo - divisor <= 0:
+            cociente += 1
+            dividendo -= divisor
+    elif dividendo < 0 and divisor > 0 :
+        while dividendo + divisor >= 0:
+            cociente -= 1
+            dividendo += divisor
+    elif dividendo > 0 and divisor < 0:
+        while dividendo + divisor >= 0 :
+            cociente -= 1
+            dividendo += divisor
     return (f'El cociente es {cociente} y el resto es {dividendo}')
 
 def principal():
@@ -27,8 +48,8 @@ def principal():
     """
     dividendo = int(input('Ingrese un número para dividir: '))
     divisor = int(input('Ingrese el número por el cual lo quiera dividir: '))
-    print(division_lenta(dividendo, divisor))
+    resultado = division_lenta(dividendo, divisor)
+    print(resultado)
 
 if __name__ == "__main__":
     principal()
-
