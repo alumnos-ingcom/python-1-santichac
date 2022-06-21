@@ -19,8 +19,8 @@ def es_palindromo(texto):
     si no es palindromo.
     """
     texto_invertido = ""
-    for l in texto:
-        texto_invertido = l + texto_invertido
+    for x in texto:
+        texto_invertido = x + texto_invertido
     if texto == texto_invertido:
         texto_es_palindromo = True
     else:
