@@ -15,15 +15,14 @@ def es_primo(numero):
     Post: la función devuelve True si el número es primo y
     False si el número no es primo.
     """
-    if numero < 1:
-        numero = False
-    elif numero == 2:
-        numero = True
+    devolucion = 0
+    if numero == 2:
+        devolucion = True
+    elif numero % 2 == 0:
+        devolucion = False
     else:
-        for primo_a in range(2, numero):
-            if numero % primo_a == 0:
-                numero = False
-    return numero
+        devolucion = True
+    return devolucion
 
 def principal():
     """
@@ -31,7 +30,7 @@ def principal():
     'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
-    numero = int(input('Ingrese un numero:'))
+    numero = int(input('Ingrese un numero: '))
     resultado = es_primo(numero)
 
     if resultado:
