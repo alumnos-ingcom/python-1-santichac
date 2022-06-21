@@ -16,14 +16,14 @@ def es_primo(numero):
     False si el número no es primo.
     """
     if numero < 1:
-        devolucion = False
+        numero = False
     elif numero == 2:
-        devolucion = True
+        numero = True
     else:
         for primo_a in range(2, numero):
             if numero % primo_a == 0:
-                devolucion = False
-    return devolucion
+                numero = False
+    return numero
 
 def principal():
     """
