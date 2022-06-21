@@ -31,8 +31,8 @@ def division_lenta(dividendo, divisor):
         while dividendo - divisor <= 0:
             cociente += 1
             dividendo -= divisor
-    elif dividendo < 0 and divisor > 0 :
-        while dividendo + divisor >= 0:
+    elif dividendo < 0 and divisor > 0:
+        while dividendo + divisor <= 0:
             cociente -= 1
             dividendo += divisor
     elif dividendo > 0 and divisor < 0:
