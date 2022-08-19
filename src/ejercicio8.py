@@ -15,14 +15,15 @@ def es_primo(numero):
     Post: la función devuelve True si el número es primo y
     False si el número no es primo.
     """
-    devolucion = 0
-    if numero == 2:
-        devolucion = True
-    elif numero % 2 == 0:
+    devolucion = True
+    for n in range(2, numero):
+        if numero % n == 0:
+            devolucion = False
+    if numero == 1:
         devolucion = False
-    else:
-        devolucion = True
+    
     return devolucion
+    
 
 def principal():
     """
